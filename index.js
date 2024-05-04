@@ -105,6 +105,11 @@ console.log(
 // 8) Знайдіть книжку з найменшою кількістю сторінок (треба відсортувати та вивести елемент з індеком 0)
 console.log(
   "8) Знайдіть книжку з найменшою кількістю сторінок (треба відсортувати та вивести елемент з індеком 0): \n",
-  books.toSorted((book, anotherbook) => book.pages - anotherbook.pages)[0],
+  books.toSorted((book, anotherbook) => book.pages - anotherbook.pages).at(0),
   "\n"
 );
+
+const array = [5,3,2];
+console.log(1);
+console.log(array[1.5]);
+console.log(array.at(1.5));
